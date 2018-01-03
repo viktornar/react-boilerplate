@@ -1,0 +1,34 @@
+.page-container {
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 0 $small-padding;
+
+  @include respond-to(medium-up) {
+    padding: 0 $large-padding;
+  }
+}
+
+.overlay {
+  background-color: rgba(26, 26, 26, .5);
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none
+}
+
+.main {
+  display: block; // IE11 needs explicit setup of display type
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  @include respond-to(small-up) {
+    margin-top: 120px;
+  }
+
+  @include respond-to(medium-up) {
+    margin: 0;
+  }
+}
