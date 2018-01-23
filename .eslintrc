@@ -23,11 +23,12 @@
     "no-redeclare": [1, { "builtinGlobals": true }],
     "brace-style": [1, "1tbs"],
     "no-alert": 1,
-    "babel/object-shorthand": 1,
-    "babel/arrow-parens": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/jsx-no-duplicate-props": 1,
-    "react/react-in-jsx-scope": 1
+    "react/react-in-jsx-scope": 1,
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "jsx-a11y/alt-text": "off"
   }
 }

@@ -7,7 +7,6 @@ import NoMatch from './Nomatch';
 
 if (process.env.WEBPACK) require('../styles/main.scss');
 
-
 const App = () => (
   <Switch>
     <Route exact path="/" component={ Home } />

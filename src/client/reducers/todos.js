@@ -1,6 +1,6 @@
-import { toggleTodo } from "../actions/todos";
-import { handleActions } from "redux-actions";
+import { handleActions } from 'redux-actions';
 
+import { toggleTodo } from '../actions/todos';
 
 const defaultState = [
   { id: 1, text: 'Todo 1', checked: false },

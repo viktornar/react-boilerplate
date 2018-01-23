@@ -60,12 +60,12 @@ export function mediaQueryMapper({
     return value;
   }
 
-  function onMqChange(mq) {
+  function onMqChange() {
     onChange(getValue());
   }
 
   function removeListeners() {
-    mQs.forEach((mq, i) => {
+    mQs.forEach((mq) => {
       mq && mq.removeListener && mq.removeListener();
     });
   }
