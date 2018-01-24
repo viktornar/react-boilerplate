@@ -7,7 +7,7 @@
     "lint": "./node_modules/.bin/eslint ./src",
     "start-dev": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon --ignore ./src/client/ --ignore ./src/server/tests/ ./index.js",
     "start": "./node_modules/.bin/cross-env NODE_ENV=production node ./index.js",
-    "test": "mocha --compilers js:babel-core/register --require ./src/__tests__/helper.js 'src/__test__/**/*.js'",
+    "test": "mocha --require babel-core/register --require ./src/__tests__/helper.js 'src/__tests__/**/*.js'",
     "test:watch": "npm run test -- --watch",
     "bundle": "./node_modules/.bin/rimraf dist && ./node_modules/.bin/webpack --config ./webpack.config.prod.js",
     "prestart": "npm run bundle"
